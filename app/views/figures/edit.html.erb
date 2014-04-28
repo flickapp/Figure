@@ -1,0 +1,5 @@
+<%= @figure.name %>
+	<%= form_tag "/figures/#{@figure.id}", method: :put do %>
+		<input type="textfield" value="<%= @figure.name %>" name="name"></input>
+		<input type="submit" value="submit me" />
+	<% end %>
